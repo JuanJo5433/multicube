@@ -45,12 +45,11 @@ const Footer = () => {
         <div className="bg-[#031D29] mb-8 lg:mb-0">
           <h3 className="bg-[#031D29] text-2xl font-bold mb-4">Contáctanos</h3>
           <p className="bg-[#031D29] mb-2">
-            <span className="font-medium mr-2 bg-[#031D29]">📞</span>+57 321
-            3210986
+            <span className="font-medium mr-2 bg-[#031D29]">📞</span>+57 321 5717983
           </p>
           <p className="bg-[#031D29] mb-2">
             <span className="font-medium mr-2 bg-[#031D29]">📧</span>
-            cubofuncional@gmail.com
+            parracallemanueljeronimo22@gmail.com
           </p>
           <p className="bg-[#031D29]">
             <span className="font-medium mr-2 bg-[#031D29]">📍</span>
