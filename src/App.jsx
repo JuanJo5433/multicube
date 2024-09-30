@@ -5,9 +5,9 @@ import product from "./assets/product.jpeg";
 const FeatureCard = ({ icon, title, description }) => {
   return (
     <div className="bg-white shadow-lg rounded-lg p-6 m-2 w-full lg:w-[30%] border border-gray-200">
-      <div className="text-4xl text-[#00E2D3] mb-4">{icon}</div>
-      <h3 className="text-xl font-semibold text-[#0D33B3] mb-2">{title}</h3>
-      <p className="text-[#005452]">{description}</p>
+      <div className="text-4xl text-[#F25430] mb-4">{icon}</div>
+      <h3 className="text-xl font-semibold text-[#031D29] mb-2">{title}</h3>
+      <p className="text-[#386873]">{description}</p>
     </div>
   );
 };
@@ -15,16 +15,16 @@ const FeatureCard = ({ icon, title, description }) => {
 const ClientReviewCard = ({ name, title, comment, rating }) => {
   return (
     <div className="bg-white shadow-lg rounded-lg p-6 m-2 w-full lg:w-[30%] border border-gray-200">
-      <h3 className="text-xl font-semibold text-[#0D33B3]">{name}</h3>
-      <p className="text-sm text-[#005452]">{title}</p>
-      <p className="text-[#0D33B3] mt-4">{comment}</p>
+      <h3 className="text-xl font-semibold text-[#031D29]">{name}</h3>
+      <p className="text-sm text-[#386873]">{title}</p>
+      <p className="text-[#031D29] mt-4">{comment}</p>
       <div className="flex mt-4">
         {[...Array(5)].map((_, index) => (
           <svg
             key={index}
             xmlns="http://www.w3.org/2000/svg"
             className={`h-5 w-5 ${
-              index < rating ? "text-[#00E2D3]" : "text-gray-300"
+              index < rating ? "text-[#F25430]" : "text-gray-300"
             }`}
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -39,7 +39,7 @@ const ClientReviewCard = ({ name, title, comment, rating }) => {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0D33B3] text-white py-8 px-6 mt-36">
+    <footer className="bg-[#031D29] text-white py-8 px-6 mt-36">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center">
         <div className="mb-8 lg:mb-0">
           <h3 className="text-2xl font-bold mb-4">Contáctanos</h3>
@@ -71,7 +71,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="bg-[#00E2D3] hover:bg-[#00E7E3] text-white py-2 px-4 rounded"
+                className="bg-[#F25430] hover:bg-[#F26835] text-white py-2 px-4 rounded"
               >
                 Enviar Mensaje
               </button>
@@ -94,14 +94,14 @@ const App = () => {
         {/* Primera sección */}
         <section id="producto" className="flex flex-col lg:flex-row mt-36 mx-auto max-w-7xl p-6">
           <div className="flex flex-col justify-center px-6 lg:px-20 lg:w-1/2">
-            <h1 className="font-bold text-5xl md:text-7xl text-[#0D33B3]">
+            <h1 className="font-bold text-5xl md:text-7xl text-[#031D29]">
               Cubo Multifuncional
             </h1>
-            <span className="text-xl text-[#005452] mt-4">
+            <span className="text-xl text-[#386873] mt-4">
               Un producto revolucionario diseñado para mejorar la calidad de vida en nuestros hogares.
             </span>
             <div className="mt-6 flex space-x-4">
-              <button className="bg-[#00E2D3] text-white py-2 px-4 rounded-lg shadow hover:bg-[#00E7E3] transition duration-200">
+              <button className="bg-[#F25430] text-white py-2 px-4 rounded-lg shadow hover:bg-[#F26835] transition duration-200">
                 Comprar Ahora
               </button>
             </div>
@@ -118,7 +118,7 @@ const App = () => {
         
         {/* Sección de características */}
         <section id="caracteristicas" className="mt-36 px-6">
-          <h2 className="text-3xl font-bold text-[#0D33B3]">
+          <h2 className="text-3xl font-bold text-[#031D29]">
             Características Principales
           </h2>
           <div className="flex flex-wrap mt-6 justify-between">
@@ -144,10 +144,10 @@ const App = () => {
         
         {/* Sección de comentarios de clientes */}
         <section className="mt-36 px-6">
-          <h2 className="text-3xl font-bold text-[#0D33B3]">
+          <h2 className="text-3xl font-bold text-[#031D29]">
             Lo que Dicen Nuestros Clientes
           </h2>
-          <p className="text-lg text-[#005452] mt-2">
+          <p className="text-lg text-[#386873] mt-2">
             Comentarios de clientes satisfechos...
           </p>
           <div className="flex flex-wrap mt-6 justify-between">
@@ -172,11 +172,55 @@ const App = () => {
         <div className="border-t border-gray-300 my-12"></div> {/* Divider */}
         
         {/* Sección sobre nosotros */}
-        <section id="sobre-nosotros" className="mt-36 px-6">
-          <h2 className="text-3xl font-bold text-[#0D33B3]">Sobre Nosotros</h2>
-          <p className="mt-4 text-[#005452]">
-            En MultiCube, nos dedicamos a innovar y mejorar la vida de las personas a través de productos multifuncionales que son prácticos, eficientes y estéticamente agradables. Nuestro objetivo es ofrecer soluciones que se adapten a las necesidades de nuestros clientes y les permitan disfrutar de su hogar de una manera única.
-          </p>
+        <section id="sobre-nosotros" className="mt-36 px-6 py-12">
+          <h2 className="text-3xl font-bold text-[#031D29] text-center">
+            Sobre Nosotros
+          </h2>
+          <div className="mt-8 flex flex-col lg:flex-row justify-between">
+            <div className="lg:w-2/3 mr-24 text-justify">
+              <div className="mt-8">
+                <h3 className="text-2xl font-bold text-[#031D29]">Visión</h3>
+                <p className="text-lg text-[#386873] leading-relaxed mt-2">
+                Ser la solución innovadora y
+versátil para mejorar la
+calidad de vida de nuestros
+clientes, proporcionando un
+producto líder en tecnología
+que combine funcionalidad y
+estilo en un diseño compacto
+y moderno.                </p>
+              </div>
+              <div className="mt-8">
+                <h3 className="text-2xl font-bold text-[#031D29]">Misión</h3>
+                <p className="text-lg text-[#386873] leading-relaxed mt-2">
+                Nuestra misión es ofrecer a nuestros clientes
+un cubo multifuncional que integre un
+ventilador, ambientador, pantalla LCD y reloj
+digital en un solo dispositivo, brindando una
+experiencia única de comodidad y bienestar en
+cualquier entorno. Nos comprometemos a
+utilizar tecnología de vanguardia, materiales
+de alta calidad y un diseño elegante para
+superar las expectativas de nuestros clientes y
+enriquecer su vida cotidiana. Nuestro objetivo
+es ser reconocidos como líderes en innovación,
+calidad y satisfacción del cliente en el mercado
+de productos para el hogar y la oficina.
+                </p>
+              </div>
+            </div>
+            <div className="lg:w-1/3 bg-white shadow-md rounded-lg p-6 border border-gray-300">
+              <h3 className="text-2xl font-bold text-[#031D29] mb-4">
+                Nuestro Equipo
+              </h3>
+              <ul className="list-disc list-inside">
+                <li className="text-lg text-[#386873]">Jean Carlos Bermúdez</li>
+                <li className="text-lg text-[#386873]">
+                  Manuel Jerónimo Parra
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </main>
       <Footer />

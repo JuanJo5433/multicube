@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import logo from "../assets/logo.png";
 const Header = () => {
   return (
-    <header className="px-4 lg:px-6 h-16 flex items-center border-b">
+    <header className="bg-[#031D29]  text-white px-4 lg:px-6 h-16 flex items-center border-b">
       <div className="flex items-center justify-center">
       <img src={logo} className="h-12 w-14 mr-2" alt="Logo" />
       <span className="text-lg font-bold">MultiCube</span>
